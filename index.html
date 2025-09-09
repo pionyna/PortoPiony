@@ -9,24 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/character.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
  </head>
-  <script>
-   
-
-      fetch("porto.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("porto").innerHTML = data;
-
-    // ambil semua <script> dari porto.html dan eksekusi
-    const scripts = document.getElementById("porto").querySelectorAll("script");
-    scripts.forEach(oldScript => {
-      const newScript = document.createElement("script");
-      newScript.text = oldScript.text;
-      document.body.appendChild(newScript);
-    });
-  });
-
-  </script>
+ 
   <body>
      <nav class="navbar">
       <a href="#" class="logo">Piony's Portfolio</a>
@@ -149,7 +132,213 @@
         </div>
     </section>
 
-    <div id="porto"></div>
+    <section id="porto">
+      <h2>Portfolio</h2>
+
+      <!-- Tombol Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="project">Project</button>
+        <button class="tab-btn" data-tab="commission">Commission</button>
+        <button class="tab-btn" data-tab="myart">My Art</button>
+      </div>
+
+      <!-- Konten Tabs -->
+      <div class="tab-content active" id="project">
+        <div class="slider">
+          <button class="prev">❮</button>
+
+          <div class="slide active">
+            <p>Ocel <span>Website</span></p>
+            <div class="img">
+              <img src="assets/projectimg/home.gif" alt="Project 1" />
+              <img src="assets/projectimg/login.gif" alt="Project 1" />
+              <img src="assets/projectimg/map.gif" alt="Project 1" />
+              <img src="assets/projectimg/3d.gif" alt="Project 1" />
+            </div>
+            <div class="last">
+              <img src="assets/projectimg/c3d.png" alt="Project 1" />
+              <b
+                >This project was carried out independently as a graduation
+                requirement for completing my studies at Politeknik Negeri
+                Jember and Changzhou Institute of Mechatronic Technology
+                (CZIMT). I involved the entire development process, from
+                planning and design to implementation and testing, ensuring the
+                final solution met both technical and functional requirements.
+                This experience strengthened my ability to work autonomously,
+                manage project timelines, and deliver good-quality results.</b
+              >
+            </div>
+          </div>
+
+          <div class="slide">
+            <p>Whisper Of The Wood <span>Game</span> </p>
+            <div class="project2">
+              
+            <div class="left">
+              <img
+                src="assets/projectimg/project2/blue soul 01-export.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/campfire.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/botol isi air-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/botol isi potion-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+            </br>
+              <img
+                src="assets/projectimg/project2/bunga tulip.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/chest(1).gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/handsaplast-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/kain-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              </br>
+              <img
+                src="assets/projectimg/project2/kendi-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/kertas.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/kulit-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/obor.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+            </br>
+              <img
+                src="assets/projectimg/project2/pohon mati.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/pohon1-export1.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/rumput.gif"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/sumur-export.png"
+                alt="Project 2"
+                class="project2-img"
+              /></br>
+              <img
+                src="assets/projectimg/project2/surat-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+              <img
+                src="assets/projectimg/project2/tali_rope-export.png"
+                alt="Project 2"
+                class="project2-img"
+              />
+            </div>
+            <div class="right">
+              <img
+                src="assets/projectimg/project2/Tak berjudul66_20250821211254.png"
+                alt="Project 1"
+              />
+              <b>
+                This project was developed collaboratively with my teammates as part of the MSIB Independent Study Program. Throughout the process, we worked together to design and implement the solution while receiving valuable guidance from our mentor. My role involved 
+                contributing to design aspects especially in game's item, ensuring the project met the program’s objectives and delivered a functional, user-friendly result
+              </b>
+        
+            </div>
+            </div>
+          </div>
+
+          <button class="next">❯</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="commission">
+        <h3>Commission</h3>
+        <div class="slider">
+          <button class="prev">❮</button>
+
+          <div class="slide active">
+            
+          </div>
+
+          <div class="slide">
+           
+          </div>
+
+          <div class="slide">
+            
+          </div>
+
+          <button class="next">❯</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="myart">
+        <h3>My Art</h3>
+        <div class="slider">
+          <button class="prev">❮</button>
+
+          <div class="slide active">
+            <img src="assets/projectimg/home.gif" alt="Project 1" />
+            <img src="assets/projectimg/login.gif" alt="Project 1" />
+            <img src="assets/projectimg/map.gif" alt="Project 1" />
+            <img src="assets/projectimg/3d.gif" alt="Project 1" />
+          </div>
+
+          <div class="slide">
+            <img src="assets/projectimg/home.gif" alt="Project 2" />
+            <img src="assets/projectimg/login.gif" alt="Project 2" />
+            <img src="assets/projectimg/map.gif" alt="Project 2" />
+            <img src="assets/projectimg/3d.gif" alt="Project 2" />
+          </div>
+
+          <div class="slide">
+            <img src="assets/projectimg/home.gif" alt="Project 3" />
+            <img src="assets/projectimg/login.gif" alt="Project 3" />
+            <img src="assets/projectimg/map.gif" alt="Project 3" />
+            <img src="assets/projectimg/3d.gif" alt="Project 3" />
+          </div>
+
+          <button class="next">❯</button>
+        </div>
+      </div>
+    </section>
+
 
     <section id="contact" class="contact">
       <h3>Contact me :</h3>
@@ -160,4 +349,47 @@
     </div>
   </section>
   </body>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+
+    let currentIndex = 0;
+
+    // Tab click
+    tabs.forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        showTab(index);
+      });
+    });
+
+    function showTab(index) {
+      tabs.forEach((b) => b.classList.remove("active"));
+      contents.forEach((c) => c.classList.remove("active"));
+      tabs[index].classList.add("active");
+      contents[index].classList.add("active");
+      currentIndex = index;
+    }
+
+    // Slider functionality
+    document.querySelectorAll(".slider").forEach((slider) => {
+      let slides = slider.querySelectorAll(".slide");
+      let current = 0;
+
+      const showSlide = (n) => {
+        slides.forEach((s) => s.classList.remove("active"));
+        slides[n].classList.add("active");
+      };
+
+      slider.querySelector(".prev").addEventListener("click", () => {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      });
+
+      slider.querySelector(".next").addEventListener("click", () => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      });
+    });
+  </script>
 </html>
