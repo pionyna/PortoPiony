@@ -10,11 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
  </head>
   <script>
-    fetch("navbar.html")
-      .then((res) => res.text())
-      .then((data) => {
-        document.getElementById("navbar").innerHTML = data;
-      });
+   
 
       fetch("porto.html")
   .then(res => res.text())
@@ -32,7 +28,15 @@
 
   </script>
   <body>
-    <div id="navbar"></div>
+     <nav class="navbar">
+      <a href="#" class="logo">Piony's Portfolio</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#porto">Porto</a></li>
+      </ul>
+    </nav>
     <section id="home" class="home">
       <div class="left">
         <img src="assets/img/text.png" alt="piony's portfolio" />
