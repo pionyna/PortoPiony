@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Piony's Porto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="assets/img/character.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ </head>
+  <script>
+    fetch("navbar.html")
+      .then((res) => res.text())
+      .then((data) => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+
+      fetch("porto.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("porto").innerHTML = data;
+
+    // ambil semua <script> dari porto.html dan eksekusi
+    const scripts = document.getElementById("porto").querySelectorAll("script");
+    scripts.forEach(oldScript => {
+      const newScript = document.createElement("script");
+      newScript.text = oldScript.text;
+      document.body.appendChild(newScript);
+    });
+  });
+
+  </script>
+  <body>
+    <div id="navbar"></div>
+    <section id="home" class="home">
+      <div class="left">
+        <img src="assets/img/text.png" alt="piony's portfolio" />
+        <p>──── Design by Piony 2025</p>
+      </div>
+      <div class="right">
+        <img src="assets/img/character.png" />
+      </div>
+    </section>
+
+    <section class="line">
+      <p>
+        UI / UX Designer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Web Designer
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Graphic Designer
+      </p>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-header">
+        <img src="assets/img/pionys.png" alt="Profile Picture" />
+        <div class="about-intro">
+          <span class="hello">Alfionina Dwi Rachmalia</span>
+          <span class="hello">20 January 2004</span>
+          <span class="hello">Indonesia</span>
+          <h1>Hello<span class="dot"> !!</span></h1>
+          <p>
+            I am a fresh graduate with GPA (3.85) in Information Technology who
+            has studied at Politeknik Negeri Jember, Indonesia, and Changzhou
+            Institute of Mechatronic Technology, China. My academic journey has
+            been enriched with hands-on projects in web development, UI/UX
+            design, and creative technology. I also gained valuable
+            intercultural experience as a volunteer which strengthened my
+            adaptability, teamwork, and communication skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <div class="SS"> 
+          
+          <!-- Skills -->
+        <div class="box">
+          <h3 class="skills">Skills</h3>
+          <ul>
+            <li>UI/UX Design</li>
+            <li>Graphic Design</li>
+            <li>Web Design</li>
+            <li>JavaScript, HTML, CSS</li>
+          </ul>
+        </div>
+      
+        <!-- Software -->
+        <div class="box">
+  <h3 class="Software">Software</h3>
+  <div class="isi">
+    <div class="item">
+      <img src="assets/icons/figma.png" alt="Figma">
+      <p>Figma</p>
+    </div>
+    <div class="item">
+      <img src="assets/icons/canva.png" alt="Canva">
+      <p>Canva</p>
+    </div>
+    <div class="item">
+      <img src="assets/icons/ibis.png" alt="IbisPaint">
+      <p>IbisPaint</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+       
+        <!-- Experience -->
+        <div class="box">
+          <h3 class="experience">Experience</h3>
+
+          <b>Illustrator & Graphic Designer (Freelance).</b>
+          <p>2020 - 2025</p>
+
+          <b>Intercultural Volunteer Project – Collaboration with Korean Students</b>
+          <p>2023</p>
+        </div>
+
+        <!-- Education -->
+        <div class="box">
+          <h3 class="education">Education</h3>
+
+          <b
+            >常州机电职业技术学院 (CZIMT) Diploma (Associate’s Degree), Software
+            Engineering</b
+          >
+          <p>2024 - 2025</p>
+
+          <b
+            >Politeknik Negeri Jember Diploma (Associate’s Degree), Informatics
+            Management</b
+          >
+          <p>2022 - 2025</p>
+        </div>
+
+        <!-- Languages -->
+        <div class="box">
+          <h3 class="languages">Languages</h3>
+          <ul>
+            <li>Indonesia (Native)</li>
+            <li>English (Advance)</li>
+            <li>Chinnese (HSK 3)</li>
+          </ul>
+        </div>
+    </section>
+
+    <div id="porto"></div>
+
+    <section id="contact" class="contact">
+      <h3>Contact me :</h3>
+      <div class="box1">
+      <p><i class="fa-solid fa-envelope"></i> Gmail : alfionina1@gmail.com</p>
+      <p> <i class="fa-brands fa-whatsapp"></i>Whatsapp : +6282335643075</p>
+      <p><i class="fa-brands fa-instagram"></i>Instagram : @peonypio</p>
+    </div>
+  </section>
+  </body>
+</html>

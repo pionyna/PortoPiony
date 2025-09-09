@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Simple</title>
+    <style>
+      @font-face {
+        font-family: "coco";
+        src: url("/font/Cocogoose-Pro-Darkmode-trial.ttf") format("truetype");
+      }
+      body {
+        margin: 0;
+        font-family: coco;
+      }
+
+      /* Navbar container */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3967e5;
+        padding: 10px 20px;
+      }
+
+      /* Logo / brand */
+      .navbar .logo {
+        color: white;
+        margin-left: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      /* Menu */
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        margin-right: 75px;
+      }
+
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: #1f2b4b;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Piony's Portfolio</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#porto">Porto</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
