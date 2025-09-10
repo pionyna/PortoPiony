@@ -8,15 +8,15 @@
 }
 @font-face {
   font-family: "mont";
-  src: url("/font/Mont-HeavyDEMO.otf") format("truetype");
+  src: url("/font/Mont-HeavyDEMO.otf") format("opentype");
 }
 @font-face {
   font-family: "tommy";
-  src: url("/font/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf") format("truetype");
+  src: url("/font/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf") format("opentype");
 }
 @font-face {
   font-family: "madani";
-  src: url("/font/MadaniArabicDEMO-Regular.otf") format("truetype");
+  src: url("/font/MadaniArabicDEMO-Regular.otf") format("opentype");
 }
 
 @font-face {
