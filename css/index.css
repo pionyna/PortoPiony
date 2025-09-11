@@ -1,27 +1,27 @@
 @font-face {
   font-family: "coco";
-  src: url("/font/Cocogoose-Pro-Bold-trial.ttf") format("truetype");
+  src: url("../font/Cocogoose-Pro-Bold-trial.ttf") format("truetype");
 }
 @font-face {
   font-family: "nexa";
-  src: url("/font/Nexa-Heavy.ttf") format("truetype");
+  src: url("../font/Nexa-Heavy.ttf") format("truetype");
 }
 @font-face {
   font-family: "mont";
-  src: url("/font/Mont-HeavyDEMO.otf") format("opentype");
+  src: url("../font/Mont-HeavyDEMO.otf") format("opentype");
 }
 @font-face {
   font-family: "tommy";
-  src: url("/font/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf") format("opentype");
+  src: url("../font/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf") format("opentype");
 }
 @font-face {
   font-family: "madani";
-  src: url("/font/MadaniArabicDEMO-Regular.otf") format("opentype");
+  src: url("../font/MadaniArabicDEMO-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "coco";
-  src: url("/font/Cocogoose-Pro-Darkmode-trial.ttf") format("truetype");
+  src: url("../font/Cocogoose-Pro-Darkmode-trial.ttf") format("truetype");
 }
 
 html {
