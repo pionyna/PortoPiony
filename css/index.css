@@ -193,7 +193,7 @@ body {
   padding: 20px;
   border-radius: 15px;
   border: 3px dashed #3967e543;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 
   h3 {
     letter-spacing: 3px;
@@ -264,7 +264,7 @@ body {
 }
 
 .contact {
-  background-color: #3967e5;
+  background-color: #3967e5d4;
   width: 100%;
   height: auto;
   display: flex;
@@ -280,29 +280,36 @@ body {
 }
 .box1 {
   display: flex;
+  gap: 300px;
+  a {
+    max-width: 200px;
+  }
   i {
     width: 50px;
     font-size: 24px;
     font-weight: bold;
   }
-  p {
+  button {
     font-size: 20px;
     font-family: tommy;
     font-weight: bold;
-    width: 500px;
+    width: 400px;
     height: auto;
     border-radius: 20px;
+    border: none;
     padding: 10px 30px;
     background-color: white;
     color: #162b67;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 0px;
+    margin-bottom: 50px;
   }
 }
 
 #porto {
   text-align: center;
+  margin-top: 100px;
   h2 {
     font-family: coco;
     font-size: 50px;
@@ -428,6 +435,72 @@ body {
       display: flex;
       color: #743823;
       margin-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      font-size: 16px;
+    }
+  }
+}
+.project3 {
+  display: flex;
+  align-items: center; /* biar sejajar vertikal */
+  gap: 20px; /* jarak antar elemen kiri-kanan */
+  max-width: 100%;
+
+  .left {
+    display: flex;
+    flex: 1; /* otomatis bagi space sesuai konten */
+    margin: 0;
+  }
+  .project2-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: contain;
+    margin: 10px; /* hapus margin biar nempel ke kanan */
+  }
+  .right {
+    flex: 2; /* kanan lebih besar dari kiri */
+    margin-left: 230px;
+    box-shadow: none;
+    b {
+      display: block; /* cukup block, gak perlu flex */
+      color: #162b67;
+      margin-top: 0; /* hapus jarak atas */
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      font-size: 16px;
+    }
+  }
+}
+
+.project4 {
+  display: flex;
+  max-width: 100%;
+  gap: 0;
+  .left {
+    max-width: 500px;
+    margin: 0px;
+  }
+  .project2-img {
+    max-width: 100% !important;
+    height: auto; /* supaya rasio tetap */
+    border-radius: 6px;
+    object-fit: contain;
+    margin: 5px;
+  }
+  .right {
+    width: 500px !important;
+    margin-top: 100px;
+    box-shadow: none;
+    img {
+      max-width: 40%;
+    }
+    b {
+      display: flex;
+      color: #743823;
+      margin-top: 20px;
+      margin-left: 40px;
       font-family: Arial, Helvetica, sans-serif;
       text-align: left;
       font-size: 16px;
