@@ -31,6 +31,7 @@ html {
 body {
   margin: 0;
   font-family: coco;
+  background-color: #f2f5ff;
 }
 
 /* Navbar container */
@@ -44,7 +45,7 @@ body {
   width: 100%;
   background-color: #3967e5;
   padding: 10px 20px;
-  z-index: 1000;
+  z-index: 10;
 }
 
 /* Logo / brand */
@@ -83,11 +84,6 @@ body {
   display: none;
   font-size: 24px;
   cursor: pointer;
-}
-
-body {
-  margin: 0;
-  background-color: #f2f5ff;
 }
 
 .home {
@@ -558,6 +554,7 @@ body {
   background: #3967e5;
   color: #fff;
   padding: 40px 20px 20px 20px;
+  margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -638,29 +635,61 @@ body {
     margin-bottom: 5px;
   }
   .menu-toggle {
-    margin-right: 50px;
+    color: white;
     display: block;
-    color: #f2f5ff;
+    font-size: 28px;
+    padding: 8px 10px;
+    padding-right: 40px;
+    z-index: 100001; /* pastikan di atas */
+    background: transparent;
   }
 
+  /* sembunyikan menu desktop (aman) */
   .navbar ul {
     display: none;
+  }
+
+  /* tampilkan menu ketika JS menambahkan class "active" ke <ul id="nav-menu"> */
+  #nav-menu.active {
+    display: flex !important;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* tinggi navbar */
-    right: 60px;
+    top: 80px; /* sesuaikan tinggi navbar */
+    right: 50px;
+    max-width: 300px;
     background: #3967e5;
+    padding: 12px;
     border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    z-index: 100;
   }
 
-  .navbar ul.active {
-    display: flex;
+  /* rapikan item */
+  #nav-menu.active li {
+    margin: 8px 0;
+    text-align: left;
   }
 
-  .navbar ul li {
-    margin: 10px 0;
+  #nav-menu.active li a {
+    display: block;
+    padding: 8px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  #nav-menu.active li a:hover {
+    display: block;
+    padding: 8px 10px;
+    color: #1f2b4b;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  /* agar klik pada icon men-trigger parent (opsional, mencegah icon menggangu pointer) */
+  .menu-toggle i,
+  #menu-toggle i {
+    pointer-events: none;
   }
 
   /* Home */
@@ -721,7 +750,6 @@ body {
     max-width: 100%;
   }
 
-  /* Contact */
   /* Contact */
   .contact {
     width: 100%; /* biar selalu pas layar */
@@ -799,14 +827,12 @@ body {
     gap: 10px;
   }
 
-  .slide.active {
-    p {
-      width: 350px;
-      font-size: 20px;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
+  .slide.active p {
+    width: 350px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   .last {
@@ -815,41 +841,40 @@ body {
     width: 100%;
     max-width: 100%;
     align-items: center;
-    img {
-      max-width: 80%;
-      margin-right: 30px;
-    }
-    b {
-      margin-left: 0;
-      margin-right: 30px;
-      margin-top: 15px;
-      font-size: 14px; /* font lebih kecil biar pas */
-      text-align: justify;
-    }
+  }
+  .last img {
+    max-width: 80%;
+    margin-right: 30px;
+  }
+  .last b {
+    margin-left: 0;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 14px; /* font lebih kecil biar pas */
+    text-align: justify;
   }
 
   .project2 {
     flex-direction: column;
-    margin-left: -20px;
+
     width: 100%;
     max-width: 100%;
     align-items: center;
-    .right {
-      margin-left: -20px;
-      width: 100%;
-      max-width: 100%;
-      align-items: center;
-      img {
-        max-width: 80%;
-      }
-      b {
-        margin-left: 35px;
-        margin-right: 30px;
-        margin-top: 15px;
-        font-size: 14px; /* font lebih kecil biar pas */
-        text-align: justify;
-      }
-    }
+  }
+  .project2 .right {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .project2 .right img {
+    max-width: 80%;
+  }
+  .project2 .right b {
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 14px; /* font lebih kecil biar pas */
+    text-align: justify;
   }
 
   .project3 {
@@ -857,46 +882,54 @@ body {
     width: 100%;
     max-width: 100%;
     align-items: center;
-    .left {
-      margin-right: 180px;
-      max-width: 50%;
-    }
-    .right {
-      margin-left: -20px;
-      width: 100%;
-      max-width: 100%;
-      align-items: center;
-      b {
-        margin-left: 50px;
-        margin-right: 30px;
-        margin-top: 15px;
-        font-size: 14px; /* font lebih kecil biar pas */
-        text-align: justify;
-      }
-    }
+  }
+  .project3 .left {
+    max-width: 50%;
+    justify-content: center;
+  }
+  .project3 .right {
+    margin-left: -20px;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .project3 .right b {
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 14px; /* font lebih kecil biar pas */
+    text-align: justify;
   }
 
   .project4 {
     flex-direction: column;
-    .left {
-      flex-direction: row;
-      width: 100%;
-      max-width: 100%;
-      align-items: center center;
-      margin-bottom: 0px;
-      img {
-        max-width: 80% !important;
-      }
-    }
-    .right {
-      margin-top: 20px;
-      b {
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 15px;
-        font-size: 14px; /* font lebih kecil biar pas */
-        text-align: justify;
-      }
-    }
+  }
+  .project4 .left {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    align-items: center center;
+    margin-bottom: 0px;
+  }
+  .project4 .left img {
+    max-width: 60% !important;
+  }
+
+  .project4 .right {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    align-items: center center;
+    margin-top: 0px;
+  }
+  .project4 .right img {
+    max-width: 30%;
+  }
+  .project4 .right b {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 15px;
+    font-size: 14px; /* font lebih kecil biar pas */
+    text-align: justify;
   }
 }
