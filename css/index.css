@@ -269,43 +269,57 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; /* h3 tetap di atas */
+  padding: 50px 180px;
+  color: #fff;
 
   h3 {
-    color: #ffffff;
-    margin-bottom: 0;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-bottom: 20px;
   }
 }
+
+/* bungkus box1 + box2 biar sejajar */
+.contact-content {
+  display: flex;
+  justify-content: space-between; /* kiri - kanan */
+  align-items: center;
+  flex-wrap: wrap; /* biar responsif */
+}
+
 .box1 {
   display: flex;
-  gap: 300px;
+  flex-direction: row;
+  gap: 20px;
+
   a {
-    max-width: 200px;
+    max-width: 400px;
   }
+
   i {
     width: 50px;
     font-size: 24px;
     font-weight: bold;
   }
+
   button {
     font-size: 20px;
     font-family: tommy;
     font-weight: bold;
     width: 400px;
-    height: auto;
     border-radius: 20px;
     border: none;
     padding: 10px 30px;
     background-color: white;
     color: #162b67;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
+}
+
+.box2 img {
+  max-width: 350px;
+  height: auto;
+  margin-right: 300px;
+  margin-top: -20px;
 }
 
 #porto {
@@ -540,6 +554,76 @@ body {
   right: 10px;
 }
 
+.footer {
+  background: #3967e5;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-container h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #ffdd57; /* warna hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
 /* === RESPONSIVE MOBILE === */
 @media (max-width: 768px) {
   body {
@@ -639,7 +723,7 @@ body {
 
   /* Contact */
   .contact {
-    padding: 0px;
+    padding-left: 50px;
     justify-content: left;
     align-items: flex-start;
     padding-bottom: 30px;
@@ -652,8 +736,8 @@ body {
   }
 
   .contact h3 {
+    margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 20px;
     font-size: 18px;
   }
 
@@ -665,6 +749,10 @@ body {
   .box1 button {
     width: 80%;
     font-size: 16px;
+  }
+
+  .box2 {
+    display: none;
   }
 
   #porto h2 {
