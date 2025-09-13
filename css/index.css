@@ -844,8 +844,8 @@ body {
   }
   .last img {
     max-width: 80%;
-    height: auto !important;
     max-height: unset;
+    height: auto !important;
   }
   .last b {
     margin-left: 0;
