@@ -11,15 +11,22 @@
  </head>
  
   <body>
-     <nav class="navbar">
-      <a href="#" class="logo">Piony's Portfolio</a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#porto">Porto</a></li>
-      </ul>
-    </nav>
+    <nav class="navbar">
+  <a href="#" class="logo">Piony's Portfolio</a>
+  
+  <!-- Tombol Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <ul id="nav-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#porto">Porto</a></li>
+  </ul>
+</nav>
+
     <section id="home" class="home">
       <div class="left">
         <img src="assets/img/text.png" alt="piony's portfolio" />
@@ -118,7 +125,7 @@
             >Politeknik Negeri Jember Diploma (Associate’s Degree), Informatics
             Management</b
           >
-          <p>2022 - 2025</p>
+          <p>2022 - 2024</p>
         </div>
 
         <!-- Languages -->
@@ -163,7 +170,11 @@
       <!-- Konten Tabs -->
       <div class="tab-content active" id="project">
         <div class="slider">
-          <button class="prev">❮</button>
+
+          <div class="slide-nav">
+              <button class="prev">❮</button>
+              <button class="next">❯</button>
+          </div>
 
           <div class="slide active">
             <p>Ocel <span>Website</span></p>
@@ -301,14 +312,17 @@
             </div>
           </div>
 
-          <button class="next">❯</button>
         </div>
       </div>
 
       <div class="tab-content" id="commission">
         
         <div class="slider">
-          <button class="prev">❮</button>
+       
+          <div class="slide-nav">
+              <button class="prev">❮</button>
+              <button class="next">❯</button>
+          </div>
 
           <div class="slide active">
            
@@ -382,16 +396,14 @@
             </div>
           </div>
 
-          
-
-          <button class="next">❯</button>
+  
         </div>
       </div>
 
       <div class="tab-content" id="myart">
         <h3>My Art</h3>
         <div class="slider">
-          <button class="prev">❮</button>
+   
 
           <div class="slide active">
             <img src="assets/projectimg/home.gif" alt="Project 1" />
@@ -414,7 +426,6 @@
             <img src="assets/projectimg/3d.gif" alt="Project 3" />
           </div>
 
-          <button class="next">❯</button>
         </div>
       </div>
 
@@ -466,5 +477,19 @@
         showSlide(current);
       });
     });
+
+    const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+
+  // biar menu ketutup setelah klik link
+  document.querySelectorAll("#nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+    });
+  });
   </script>
 </html>
