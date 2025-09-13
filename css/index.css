@@ -722,37 +722,46 @@ body {
   }
 
   /* Contact */
+  /* Contact */
   .contact {
-    padding-left: 50px;
-    justify-content: left;
+    width: 100%; /* biar selalu pas layar */
+    max-width: 100%; /* jangan lebih dari layar */
+    padding: 20px; /* ganti padding fleksibel */
+    box-sizing: border-box; /* hitung padding biar ga nambah lebar */
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    padding-bottom: 30px;
+    justify-content: flex-start;
   }
 
   .contact button {
-    width: 370px !important;
-    margin-top: 0px;
-    margin-bottom: 5px;
+    width: 100%; /* biar selalu fit layar */
+    max-width: 370px; /* tapi tetap ada batas lebar */
+    margin-top: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 
   .contact h3 {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin: 20px 20px 20px;
     font-size: 18px;
   }
 
   .box1 {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    gap: 15px;
+    width: 100%;
+    align-items: flex-start; /* biar tombolnya ke kiri */
   }
+
   .box1 button {
-    width: 80%;
+    width: 100%; /* tombol full fit layar */
     font-size: 16px;
   }
 
   .box2 {
-    display: none;
+    display: none; /* di mobile hidden */
   }
 
   #porto h2 {
