@@ -844,7 +844,7 @@ body {
   }
   .last img {
     max-width: 80%;
-    margin-right: 30px;
+    height: auto !important;
   }
   .last b {
     margin-left: 0;
@@ -856,7 +856,6 @@ body {
 
   .project2 {
     flex-direction: column;
-
     width: 100%;
     max-width: 100%;
     align-items: center;
