@@ -843,9 +843,8 @@ body {
     align-items: center;
   }
   .last img {
-    max-width: 80%;
-    max-height: unset;
-    height: auto !important;
+    max-width: unset;
+    max-height: 100px !important;
   }
   .last b {
     margin-left: 0;
