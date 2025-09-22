@@ -24,530 +24,89 @@
   src: url("../font/Cocogoose-Pro-Darkmode-trial.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "kid";
+  src: url("../font/Alphakind.ttf") format("truetype");
+}
+@font-face {
+  font-family: "epilog";
+  src: url("../font/Epilogue-VariableFont_wght.ttf") format("truetype");
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: coco;
-  background-color: #f2f5ff;
+  background-color: white;
 }
 
-/* Navbar container */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav {
   position: fixed;
-  top: 0px;
-  left: 0px;
   width: 100%;
-  background-color: #3967e5;
-  padding: 10px 20px;
-  z-index: 10;
-}
-
-/* Logo / brand */
-.navbar .logo {
-  color: white;
-  margin-left: 30px;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* Menu */
-.navbar ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar ul li {
-  margin-right: 75px;
-}
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-  color: #1f2b4b;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .home {
-  background-color: #f2f5ff;
-  margin-top: 50px;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.home .left {
-  margin-right: 50px;
-  margin-bottom: 150px;
-  img {
-    width: 700px;
-  }
-  p {
-    font-size: 24px;
-    font-family: nexa;
-    color: #3967e5;
-    text-align: right;
-  }
-}
-
-.home .right {
-  margin-bottom: 0;
-  align-items: flex-end;
-  img {
-    width: 550px;
-  }
-}
-
-.line {
-  height: 50px;
-  margin-top: -5px;
-  background-color: #3967e5;
-  display: flex;
-  justify-content: center;
-  p {
-    font-family: coco;
-    color: white;
-    letter-spacing: 3px;
-  }
-}
-
-.about {
-  max-width: 80%;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-.about-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
-  img {
-    width: 500px;
-    height: auto;
-  }
-  h1 {
-    font-size: 60px;
-    font-family: coco;
-    color: #ff3f6c;
-    margin-bottom: 0;
-  }
-  p {
-    color: #3967e5;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: px;
-    line-height: 1.5;
-  }
-}
-
-.about-intro .hello {
-  font-size: 25px;
-  font-family: nexa;
-  display: inline-block;
-  background: #ffffff;
-  color: #3967e5;
-  border: 3px dashed #3967e543;
-  padding: 5px 20px;
-  margin-right: 20px;
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  column-gap: 20px; /* jarak antar kolom */
-  row-gap: 10px; /* jarak antar baris */
-  align-items: start;
-  grid-auto-flow: dense;
-}
-
-.box {
-  max-width: 500px;
-  background: #fafafa;
-  padding: 20px;
-  border-radius: 15px;
-  border: 3px dashed #3967e543;
-  margin-bottom: 20px;
-
-  h3 {
-    letter-spacing: 3px;
-    font-family: coco;
-    margin-bottom: 25px;
-    margin-top: 0px;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #ff3f6c;
-  }
-  ul {
-    font-weight: bold;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px; /* jarak antar list item */
-    color: #3967e5;
-    line-height: 1.6; /* jarak antar baris */
-  }
-  b {
-    color: #3967e5;
-    font-size: 20px;
-    font-weight: 600;
-    display: block; /* biar turun ke bawah rapi */
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  p {
-    background-color: #3967e5;
-    color: #ffffff;
-    display: inline-block;
-    padding: 4px 12px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin: 10px 0; /* jarak atas bawah */
-  }
-  img {
-    width: 50px;
-  }
-}
-
-.isi {
-  display: flex;
-  gap: 10px;
-}
-
-.item {
-  width: 70px;
+  max-width: 100%;
+  background-color: #f6f3f1;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
-    width: 50px;
-    height: auto;
-  }
-  p {
-    background-color: rgba(255, 255, 255, 0);
-    color: #3967e5;
-    margin-top: 8px;
-    font-size: 14px;
-  }
-}
-
-.contact {
-  background-color: #3967e5d4;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column; /* h3 tetap di atas */
-  padding: 50px 180px;
-  color: #fff;
-
-  h3 {
-    margin-bottom: 20px;
-  }
-}
-
-/* bungkus box1 + box2 biar sejajar */
-.contact-content {
-  display: flex;
-  justify-content: space-between; /* kiri - kanan */
-  align-items: center;
-  flex-wrap: wrap; /* biar responsif */
-}
-
-.box1 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-
-  a {
-    max-width: 400px;
-  }
-
-  i {
-    width: 50px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  button {
-    font-size: 20px;
-    font-family: tommy;
-    font-weight: bold;
-    width: 400px;
-    border-radius: 20px;
-    border: none;
-    padding: 10px 30px;
-    background-color: white;
-    color: #162b67;
-    margin-bottom: 10px;
-  }
-}
-
-.box2 img {
-  max-width: 350px;
-  height: auto;
-  margin-right: 300px;
-  margin-top: -20px;
-}
-
-#porto {
-  text-align: center;
-  margin-top: 100px;
-  h2 {
-    font-family: coco;
-    font-size: 50px;
-    color: #ff3f6c;
-  }
-}
-
-.tabs {
-  display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
+  margin: 30px;
+  margin-top: 100px;
+  padding: 100px 20px;
+}
+
+.home img {
+  max-width: 90%;
+  margin: 20px;
+}
+
+.home p {
+  color: #1c4d9c;
+  align-self: flex-end;
+  margin-right: 100px;
+  margin-top: 0%;
+}
+
+#about {
+  position: relative; /* supaya child bisa absolute */
+}
+
+.button {
+  margin-left: 90px;
+}
+
+.button button {
+  max-width: 50%;
+  background-color: #f099b4;
+  color: #f6f3f1;
+  border: none;
+  padding: 10px 100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 24px;
+  font-family: kid;
+  letter-spacing: 5px;
 }
 
 .tab-btn {
-  padding: 10px 20px;
+  background-color: pink; /* default */
   border: none;
-  background: #ffffff;
-  color: #3967e5;
-  border: 3px solid #3967e543;
+  padding: 10px 20px;
   cursor: pointer;
-  border-radius: 10px;
-  font-size: 16px;
-  font-family: coco;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .tab-btn.active {
-  background: #3967e5;
-  border: 3px solid #ffffff43;
-  color: white;
-}
-
-/* === TABS === */
-.tab-content {
-  display: none;
-}
-.tab-content.active {
-  display: block;
-  font-family: coco;
-  color: #ff3f6c;
-}
-
-/* === SLIDER === */
-.slider {
-  font-family: mont;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* tiap slide (bisa berisi banyak img) */
-/* tiap slide */
-.slide {
-  display: none;
-  text-align: center;
-  width: 100%; /* biar fleksibel */
-  max-width: 1200px; /* batas maksimal */
-  margin: 0 auto; /* center */
-  overflow: hidden; /* cegah gambar keluar */
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.slide.active {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  p {
-    font-family: coco;
-    font-size: 40px;
-    color: #ff3f6c;
-  }
-  span {
-    color: #ffffff;
-    background-color: #3967e5;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  .last {
-    display: flex;
-    width: 1000px;
-    height: auto;
-    justify-content: center;
-    text-align: left;
-    margin-top: 30px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    img {
-      margin-left: 50px;
-      height: auto;
-    }
-    b {
-      color: #3967e5;
-      margin-left: 60px;
-    }
-  }
-}
-
-.project2 {
-  display: flex;
-  max-width: 100%;
-  gap: 0;
-  .left {
-    margin: 0px;
-  }
-  .project2-img {
-    max-width: 20% !important;
-    height: auto; /* supaya rasio tetap */
-    border-radius: 6px;
-    object-fit: contain;
-    margin: 5px;
-  }
-  .right {
-    width: 2000px !important;
-    margin: 0%;
-    box-shadow: none;
-    img {
-      max-width: 100%;
-    }
-    b {
-      display: flex;
-      color: #743823;
-      margin-top: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: left;
-      font-size: 16px;
-    }
-  }
-}
-.project3 {
-  display: flex;
-  align-items: center; /* biar sejajar vertikal */
-  gap: 20px; /* jarak antar elemen kiri-kanan */
-  max-width: 100%;
-
-  .left {
-    display: flex;
-    flex: 1; /* otomatis bagi space sesuai konten */
-    margin: 0;
-  }
-  .project2-img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 6px;
-    object-fit: contain;
-    margin: 10px; /* hapus margin biar nempel ke kanan */
-  }
-  .right {
-    flex: 2; /* kanan lebih besar dari kiri */
-    margin-left: 230px;
-    box-shadow: none;
-    b {
-      display: block; /* cukup block, gak perlu flex */
-      color: #162b67;
-      margin-top: 0; /* hapus jarak atas */
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: left;
-      font-size: 16px;
-    }
-  }
-}
-
-.project4 {
-  display: flex;
-  max-width: 100%;
-  gap: 0;
-  .left {
-    max-width: 500px;
-    margin: 0px;
-  }
-  .project2-img {
-    max-width: 100% !important;
-    height: auto; /* supaya rasio tetap */
-    border-radius: 6px;
-    object-fit: contain;
-    margin: 5px;
-  }
-  .right {
-    width: 500px !important;
-    margin-top: 100px;
-    box-shadow: none;
-    img {
-      max-width: 40%;
-    }
-    b {
-      display: flex;
-      color: #743823;
-      margin-top: 20px;
-      margin-left: 40px;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: left;
-      font-size: 16px;
-    }
-  }
-}
-
-/* gambar di dalam slide */
-.slide img {
-  margin: 10px;
-  max-width: 40%; /* jaga agar ga lebih besar dari slide */
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  flex: 0 1 45%; /* biar 2 gambar muat sejajar */
-}
-
-/* tombol navigasi */
-.slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #3967e5;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 20%;
-  font-size: 18px;
-  font-weight: bolder;
-  color: white;
-}
-.slider .prev {
-  left: 10px;
-}
-.slider .next {
-  right: 10px;
+  background-color: #f6f3f1; /* cream */
+  color: #1c4d9c;
 }
 
 .footer {
@@ -620,315 +179,92 @@ body {
   padding-top: 15px;
   font-size: 14px;
 }
+.footer {
+  background: #1c4d9c;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/* === RESPONSIVE MOBILE === */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-container h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #ffdd57; /* warna hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 14px;
+}
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  /* Navbar */
-
-  .navbar .logo {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-  }
-  .menu-toggle {
-    color: white;
-    display: block;
-    font-size: 28px;
-    padding: 8px 10px;
-    padding-right: 40px;
-    z-index: 100001; /* pastikan di atas */
-    background: transparent;
-  }
-
-  /* sembunyikan menu desktop (aman) */
-  .navbar ul {
-    display: none;
-  }
-
-  /* tampilkan menu ketika JS menambahkan class "active" ke <ul id="nav-menu"> */
-  #nav-menu.active {
-    display: flex !important;
-    flex-direction: column;
-    position: absolute;
-    top: 80px; /* sesuaikan tinggi navbar */
-    right: 50px;
-    max-width: 300px;
-    background: #3967e5;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    z-index: 100;
-  }
-
-  /* rapikan item */
-  #nav-menu.active li {
-    margin: 8px 0;
-    text-align: left;
-  }
-
-  #nav-menu.active li a {
-    display: block;
-    padding: 8px 10px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  #nav-menu.active li a:hover {
-    display: block;
-    padding: 8px 10px;
-    color: #1f2b4b;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  /* agar klik pada icon men-trigger parent (opsional, mencegah icon menggangu pointer) */
-  .menu-toggle i,
-  #menu-toggle i {
-    pointer-events: none;
-  }
-
-  /* Home */
   .home {
-    flex-direction: column;
-    margin-top: 80px;
-    align-items: center;
-    text-align: center;
+    margin-top: 70px;
   }
-  .home .left,
-  .home .right {
-    margin: 0px 0;
+  .button {
+    margin-left: 70px;
+    position: relative;
+    z-index: 1000;
   }
-  .home .left img,
-  .home .right img {
-    width: 90%;
-    max-width: 350px;
-  }
-  .home .left p {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .line {
-    height: auto;
-  }
-
-  .line p {
-    font-size: 7px;
-  }
-
-  /* About */
-  .about-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hello {
-    font-size: 15px !important;
-  }
-  .about-header img {
-    margin-top: -50px;
-    width: 80%;
-    max-width: 300px;
-  }
-  .about-header h1 {
-    font-size: 36px;
-  }
-  .about-header p {
-    font-size: 18px;
-  }
-
-  /* Box grid */
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-  .box {
-    max-width: 100%;
-  }
-
-  /* Contact */
-  .contact {
-    width: 100%; /* biar selalu pas layar */
-    max-width: 100%; /* jangan lebih dari layar */
-    padding: 20px; /* ganti padding fleksibel */
-    box-sizing: border-box; /* hitung padding biar ga nambah lebar */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .contact button {
-    width: 100%; /* biar selalu fit layar */
-    max-width: 370px; /* tapi tetap ada batas lebar */
-    margin-top: 0;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-
-  .contact h3 {
-    margin: 20px 20px 20px;
-    font-size: 18px;
-  }
-
-  .box1 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    align-items: flex-start; /* biar tombolnya ke kiri */
-  }
-
-  .box1 button {
-    width: 100%; /* tombol full fit layar */
+  .button button {
+    margin-left: 10px;
+    padding: 5px 25px;
     font-size: 16px;
   }
-
-  .box2 {
-    display: none; /* di mobile hidden */
-  }
-
-  #porto h2 {
-    font-size: 32px;
-  }
   .tab-btn {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-
-  /* Projects */
-  .slider .prev,
-  .slider .next {
-    padding: 5px;
-    position: absolute;
-    top: 30px;
-    font-size: 20px;
-    color: white;
-  }
-
-  .slide-header {
-    display: flex;
-    justify-content: space-between; /* judul di kiri, tombol di kanan */
-    align-items: center;
-    padding: 0 15px;
-  }
-
-  .slide-header p {
-    font-size: 30px;
-    margin: 0;
-  }
-
-  .slide-nav {
-    display: flex;
-    gap: 10px;
-  }
-
-  .slide.active p {
-    width: 350px;
-    font-size: 20px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
-  .last {
-    flex-direction: column;
-    margin-left: -20px;
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-  }
-  .last img {
-    max-width: unset;
-    max-height: 100px !important;
-  }
-  .last b {
-    margin-left: 0;
-    margin-right: 30px;
-    margin-top: 15px;
-    font-size: 14px; /* font lebih kecil biar pas */
-    text-align: justify;
-  }
-
-  .project2 {
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-  }
-  .project2 .right {
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-  }
-  .project2 .right img {
-    max-width: 80%;
-  }
-  .project2 .right b {
-    margin-left: 35px;
-    margin-right: 30px;
-    margin-top: 15px;
-    font-size: 14px; /* font lebih kecil biar pas */
-    text-align: justify;
-  }
-
-  .project3 {
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-  }
-  .project3 .left {
-    max-width: 50%;
-    justify-content: center;
-  }
-  .project3 .right {
-    margin-left: -20px;
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-  }
-  .project3 .right b {
-    margin-left: 50px;
-    margin-right: 30px;
-    margin-top: 15px;
-    font-size: 14px; /* font lebih kecil biar pas */
-    text-align: justify;
-  }
-
-  .project4 {
-    flex-direction: column;
-  }
-  .project4 .left {
-    flex-direction: row;
-    width: 100%;
-    max-width: 100%;
-    align-items: center center;
-    margin-bottom: 0px;
-  }
-  .project4 .left img {
-    max-width: 60% !important;
-  }
-
-  .project4 .right {
-    flex-direction: row;
-    width: 100%;
-    max-width: 100%;
-    align-items: center center;
-    margin-top: 0px;
-  }
-  .project4 .right img {
-    max-width: 30%;
-  }
-  .project4 .right b {
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 15px;
-    font-size: 14px; /* font lebih kecil biar pas */
-    text-align: justify;
+    cursor: pointer;
+    pointer-events: auto; /* pastikan tombol bisa diklik */
   }
 }

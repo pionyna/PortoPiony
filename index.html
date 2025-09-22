@@ -5,537 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Piony's Porto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="icon" type="image/png" href="assets/img/character.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
- </head>
- 
+    <link rel="icon" type="image/png" href="assets/icons/Icon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
   <body>
-    <nav class="navbar">
-  <a href="#" class="logo">Piony's Portfolio</a>
-  
-  <!-- Tombol Hamburger -->
-  <div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-  </div>
+    <section id="nav" class="nav"></section>
 
-  <ul id="nav-menu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#porto">Porto</a></li>
-  </ul>
-</nav>
-
-
-
-    <section id="home" class="home">
-      <div class="left">
-        <img src="assets/img/text.png" alt="piony's portfolio" />
-        <p>──── Design by Piony 2025</p>
-      </div>
-      <div class="right">
-        <img src="assets/img/character.png" />
+    <section id="home">
+      <div class="home">
+        <img src="assets/img/PioPort.png" />
+        <p>──── made by Piony 2025</p>
       </div>
     </section>
-
-    <section class="line">
-      <p>
-        UI / UX Designer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Web Designer
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Graphic Designer
-      </p>
-    </section>
-
-    <section id="about" class="about">
-      <div class="about-header">
-        <img src="assets/img/pionys.png" alt="Profile Picture" />
-        <div class="about-intro">
-          <span class="hello">Alfionina Dwi Rachmalia</span>
-          <span class="hello" style="font-weight: bold;">黄慧丽</span>
-          <span class="hello">20 January 2004</span>
-          <span class="hello">Indonesia</span>
-          <h1>Hello<span class="dot"> !!</span></h1>
-          <p>
-            I am a fresh graduate with GPA (3.85) in Information Technology who
-            has studied at Politeknik Negeri Jember, Indonesia, and Changzhou
-            Institute of Mechatronic Technology, China. My academic journey has
-            been enriched with hands-on projects in web development, UI/UX
-            design, and creative technology. I also gained valuable
-            intercultural experience as a volunteer which strengthened my
-            adaptability, teamwork, and communication skills.
-          </p>
-        </div>
-      </div>
-
-      <div class="about-content">
-
-        <div class="SS"> 
-          
-          <!-- Skills -->
-        <div class="box">
-          <h3 class="skills">Skills</h3>
-          <ul>
-            <li>UI/UX Design</li>
-            <li>Graphic Design</li>
-            <li>Web Design</li>
-            <li>JavaScript, HTML, CSS</li>
-          </ul>
-        </div>
-      
-        <!-- Software -->
-        <div class="box">
-  <h3 class="Software">Software</h3>
-  <div class="isi">
-    <div class="item">
-      <img src="assets/icons/figma.png" alt="Figma">
-      <p>Figma</p>
+    <div class="button">
+      <button id="btn-about" class="tab-btn active">About</button>
+      <button id="btn-porto" class="tab-btn">Porto</button>
     </div>
-    <div class="item">
-      <img src="assets/icons/canva.png" alt="Canva">
-      <p>Canva</p>
-    </div>
-    <div class="item">
-      <img src="assets/icons/ibis.png" alt="IbisPaint">
-      <p>IbisPaint</p>
-    </div>
-  </div>
-</div>
-
-      </div>
-       
-        <!-- Experience -->
-        <div class="box">
-          <h3 class="experience">Experience</h3>
-
-          <b>Illustrator & Graphic Designer (Freelance).</b>
-          <p>2020 - 2025</p>
-
-          <b>Intercultural Volunteer Project – Collaboration with Korean Students</b>
-          <p>2023</p>
-        </div>
-
-        <!-- Education -->
-        <div class="box">
-          <h3 class="education">Education</h3>
-
-          <b
-            >常州机电职业技术学院 (CZIMT) Diploma (Associate’s Degree), Software
-            Engineering</b
-          >
-          <p>2024 - 2025</p>
-
-          <b
-            >Politeknik Negeri Jember Diploma (Associate’s Degree), Informatics
-            Management</b
-          >
-          <p>2022 - 2024</p>
-        </div>
-
-        <!-- Languages -->
-        <div class="box">
-          <h3 class="languages">Languages</h3>
-          <ul>
-            <li>Indonesia (Native)</li>
-            <li>English (Advance)</li>
-            <li>Chinnese (HSK 3)</li>
-          </ul>
-        </div>
-    </section>
-
-   <section id="contact" class="contact">
-  <h3>Contact me :</h3>
-  <div class="contact-content">
-    <div class="box1">
-      <a href="mailto:alfionina1@gmail.com" target="_blank">
-        <button><i class="fa-solid fa-envelope"></i> Gmail : alfionina1@gmail.com</button>
-      </a>
-      <a href="https://wa.me/6282335643075" target="_blank">
-        <button><i class="fa-brands fa-whatsapp"></i> Whatsapp : +6282335643075</button>
-      </a>
-    </div>
-
-    <div class="box2">
-      <img src="/assets/img/bubble.png" />
-    </div>
-  </div>
-</section>
-
-
-
-    <section id="porto">
-      <h2>Portfolio</h2>
-
-      <!-- Tombol Tabs -->
-      <div class="tabs">
-        <button class="tab-btn active" data-tab="project">Project</button>
-        <button class="tab-btn" data-tab="commission">Commission</button>
-        <!-- <button class="tab-btn" data-tab="myart">My Art</button>-->
-      </div>
-
-      <!-- Konten Tabs -->
-      <div class="tab-content active" id="project">
-        <div class="slider">
-
-          <div class="slide-nav">
-              <button class="prev">❮</button>
-              <button class="next">❯</button>
-          </div>
-
-          <div class="slide active">
-            <p>Ocel <span>Website</span></p>
-            <div class="img">
-              <img src="assets/projectimg/home.gif" alt="Project 1" />
-              <img src="assets/projectimg/login.gif" alt="Project 1" />
-              <img src="assets/projectimg/map.gif" alt="Project 1" />
-              <img src="assets/projectimg/3d.gif" alt="Project 1" />
-            </div>
-            <div class="last">
-              <img src="assets/projectimg/c3d.png" alt="Project 1" />
-              <b
-                >This project was carried out independently as a graduation
-                requirement for completing my studies at Politeknik Negeri
-                Jember and Changzhou Institute of Mechatronic Technology
-                (CZIMT). I involved the entire development process, from
-                planning and design to implementation and testing, ensuring the
-                final solution met both technical and functional requirements.
-                This experience strengthened my ability to work autonomously,
-                manage project timelines, and deliver good-quality results.</b
-              >
-            </div>
-          </div>
-
-          <div class="slide">
-            <p>Whisper Of The Wood <span>Game</span> </p>
-            <div class="project2">
-              
-            <div class="left">
-              <img
-                src="assets/projectimg/project2/blue soul 01-export.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/campfire.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/botol isi air-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/botol isi potion-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-            </br>
-              <img
-                src="assets/projectimg/project2/bunga tulip.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/chest(1).gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/handsaplast-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/kain-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              </br>
-              <img
-                src="assets/projectimg/project2/kendi-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/kertas.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/kulit-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/obor.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-            </br>
-              <img
-                src="assets/projectimg/project2/pohon mati.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/pohon1-export1.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/rumput.gif"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/sumur-export.png"
-                alt="Project 2"
-                class="project2-img"
-              /></br>
-              <img
-                src="assets/projectimg/project2/surat-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-              <img
-                src="assets/projectimg/project2/tali_rope-export.png"
-                alt="Project 2"
-                class="project2-img"
-              />
-            </div>
-            <div class="right">
-              <img
-                src="assets/projectimg/project2/Tak berjudul66_20250821211254.png"
-                alt="Project 1"
-              />
-              <b>
-                This project was developed collaboratively with my teammates as part of the MSIB Independent Study Program. Throughout the process, we worked together to design and implement the solution while receiving valuable guidance from our mentor. My role involved 
-                contributing to design aspects especially in game's item, ensuring the project met the program’s objectives and delivered a functional, user-friendly result
-              </b>
-        
-            </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="tab-content" id="commission">
-        
-        <div class="slider">
-       
-          <div class="slide-nav">
-              <button class="prev">❮</button>
-              <button class="next">❯</button>
-          </div>
-
-          <div class="slide active">
-           
-              <p>Character <span>Commision</span> </p>
-
-              <div class="project3">
-              
-                <div class="left">
-                  <img
-                  src="assets/projectimg/com/evan.jpg"
-                  alt="Project 2"
-                  class="project2-img"
-                  />
-                  <img
-                  src="assets/projectimg/com/Kieran.jpg"
-                  alt="Project 2"
-                  class="project2-img"
-                  />
-              
-              </div>
-              <div class="right">
-              
-                <b>
-                  This commission involved creating a custom character design based on a story concept provided by the client. The process included understanding the character’s 
-                  personality, role in the narrative, and specific visual requirements requested by the client. The final design aimed to capture the essence of the character while maintaining a unique and visually appealing style that aligns with the client’s creative vision.
-                </br> 
-              </br>
-                note : This commissioned character displayed with the client’s permission. </b>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div>
-              <p>Logo and Packaging <span>Commision</span> </p>
-
-              <div class="project4">
-              
-                <div class="left">
-                  <img
-                  src="assets/projectimg/com/logo.png"
-                  alt="Project 2"
-                  class="project2-img"
-                  />
-                  <img
-                  src="assets/projectimg/com/mockup.png"
-                  alt="Project 2"
-                  class="project2-img"
-                  />
-              
-              </div>
-              <div class="right">
-              <img
-                  src="assets/projectimg/com/kripis1.png"
-                  alt="Project 2"
-                  />
-                  <img
-                  src="assets/projectimg/com/kripis2.png"
-                  alt="Project 2"
-                  />
-                <b>
-                 This commission involved creating a complete branding package, 
-                 including a custom logo and packaging design, tailored to the client’s specifications. 
-                 The goal was to deliver a cohesive visual identity that effectively represented the client’s 
-                 brand.
-                </br>             
-                
-                note : This commissioned character displayed with the client’s permission. </b>
-              </div>
-            </div>
-            </div>
-          </div>
-
-  
-        </div>
-      </div>
-
-      <div class="tab-content" id="myart">
-        <h3>My Art</h3>
-        <div class="slider">
-   
-
-          <div class="slide active">
-            <img src="assets/projectimg/home.gif" alt="Project 1" />
-            <img src="assets/projectimg/login.gif" alt="Project 1" />
-            <img src="assets/projectimg/map.gif" alt="Project 1" />
-            <img src="assets/projectimg/3d.gif" alt="Project 1" />
-          </div>
-
-          <div class="slide">
-            <img src="assets/projectimg/home.gif" alt="Project 2" />
-            <img src="assets/projectimg/login.gif" alt="Project 2" />
-            <img src="assets/projectimg/map.gif" alt="Project 2" />
-            <img src="assets/projectimg/3d.gif" alt="Project 2" />
-          </div>
-
-          <div class="slide">
-            <img src="assets/projectimg/home.gif" alt="Project 3" />
-            <img src="assets/projectimg/login.gif" alt="Project 3" />
-            <img src="assets/projectimg/map.gif" alt="Project 3" />
-            <img src="assets/projectimg/3d.gif" alt="Project 3" />
-          </div>
-
-        </div>
-      </div>
-
-      
-    </section>
-
-
-    
+    <section id="about"></section>
   </body>
 
   <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <h3>About Me</h3>
-      <p>
-        A passionate developer and designer who loves creating
-        interactive web experiences and digital art.
-      </p>
-    </div>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Me</h3>
+        <p>
+          A passionate developer and designer who loves creating interactive web
+          experiences and digital art.
+        </p>
+      </div>
 
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#porto">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-social">
-      <h3>Follow Me</h3>
-      <div class="social-icons">
-        <a href="https://github.com/pionyna" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/alfionina-rachmalia-92179b24a" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.instagram.com/peonypio" target="_blank"><i class="bi bi-instagram"></i></a>
+      <div class="footer-social">
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+          <a href="https://github.com/pionyna" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/alfionina-rachmalia-92179b24a"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/peonypio" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 Piony 黄慧丽. All Rights Reserved.</p>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>© 2025 Piony 黄慧丽. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-
-  <script >
-    document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navMenu = document.getElementById("nav-menu");
-
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-
-  document.querySelectorAll("#nav-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("active");
-    });
-  });
-});
-
-
-    const tabs = document.querySelectorAll(".tab-btn");
-    const contents = document.querySelectorAll(".tab-content");
-
-    let currentIndex = 0;
-
-    // Tab click
-    tabs.forEach((btn, index) => {
-      btn.addEventListener("click", () => {
-        showTab(index);
-      });
-    });
-
-    function showTab(index) {
-      tabs.forEach((b) => b.classList.remove("active"));
-      contents.forEach((c) => c.classList.remove("active"));
-      tabs[index].classList.add("active");
-      contents[index].classList.add("active");
-      currentIndex = index;
-    }
-
-    // Slider functionality
-    document.querySelectorAll(".slider").forEach((slider) => {
-      let slides = slider.querySelectorAll(".slide");
-      let current = 0;
-
-      const showSlide = (n) => {
-        slides.forEach((s) => s.classList.remove("active"));
-        slides[n].classList.add("active");
-      };
-
-      slider.querySelector(".prev").addEventListener("click", () => {
-        current = (current - 1 + slides.length) % slides.length;
-        showSlide(current);
-      });
-
-      slider.querySelector(".next").addEventListener("click", () => {
-        current = (current + 1) % slides.length;
-        showSlide(current);
-      });
-    });
-
-
-  console.log(menuToggle, navMenu)
-
-  </script>
+  <script src="script.js" defer></script>
 </html>
